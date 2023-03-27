@@ -1,3 +1,3 @@
 # memegen5000
 
-http:memegen.massivelycloud.com
+http://memegen.massivelycloud.com
