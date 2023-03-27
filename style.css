@@ -1,52 +1,54 @@
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper {
-  display: flex;  
+  display: flex;
   flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center; 
 }
 
 .wrapper > * {
   padding: 10px;
-  flex: 2 100%;
+  flex: 1  
 }
 
 .header {
   background: tomato;
-  flex: 3 12.5%;
+  flex: 2;
 }
 
 .footer {
   background: lightgreen;
-  flex: 5 12.5%;
+  flex: 5;
 }
 
 .windows1 {
-  flex: 3  37,5%; 
+  flex: 3; 
   text-align: left;
   background: deepskyblue;
   border: 3px solid red;
 }
 
 .windows2 {
-  flex: 4  37,5%; 
+  flex: 4; 
   text-align: left;
   background: deepskyblue;
   border: 3px solid red;
 }
 
 
-
 @media all and (min-width: 800px) {
-  .wrapper { flex: 2 0px; }
-  
+  .wrapper { flex: 1 0px; }
+  .header  { order: 2; }
   .windows1{ order: 3; }
   .windows2{ order: 4; } 
   .footer  { order: 5; }
 }
 
 body {
-  padding: 100%; 
-  height: 100%;
-  property: inherit;
-  display: flex;
-  }
+  padding: 5em; 
+}
